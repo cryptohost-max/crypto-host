@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Host</h1>
+        <p>Cryptocurrency Converter</p>
+        <div class="converter">
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount" step="any" value="1">
+            </div>
+            <div class="form-group">
+                <label for="from">From:</label>
+                <select id="from">
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+                    <option value="ethereum">Ethereum (ETH)</option>
+                    <option value="binancecoin">Binance Coin (BNB)</option>
+                    <option value="cardano">Cardano (ADA)</option>
+                    <option value="solana">Solana (SOL)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <select id="to">
+                    <option value="usd">US Dollar (USD)</option>
+                    <option value="eur">Euro (EUR)</option>
+                    <option value="gbp">British Pound (GBP)</option>
+                    <option value="jpy">Japanese Yen (JPY)</option>
+                    <option value="cny">Chinese Yuan (CNY)</option>
+                </select>
+            </div>
+            <button id="convertBtn">Convert</button>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
